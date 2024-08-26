@@ -10,4 +10,22 @@ anoAtual = anoAtual + 1;
 console.log(anoAtual);
 
 idade = idade + 1;
-console.log(idade);
+console.log(idade);    
+
+ //Agencia de viagens Nova york Rio de Janeiro Grecia  Canada Londres 
+const listaDeDestinos = new Array(
+  "Nova York",
+  "Rio de Janeiro",
+  "Grecia",
+  "Canada", 
+  "Londres"
+  );
+
+console.log (listaDeDestinos);
+console.log (listaDeDestinos[3]); 
+listaDeDestinos.push("Coronel Vivida");
+console.log(listaDeDestinos);
+listaDeDestinos.push("Curitiba");
+listaDeDestinos.push("Paris");
+listaDeDestinos.push("Barcelona");
+console.log(listaDeDestinos);
