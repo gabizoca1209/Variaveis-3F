@@ -20,12 +20,16 @@ const listaDeDestinos = new Array(
   "Canada", 
   "Londres"
   );
+const idadeComprador = 16;
 
-console.log (listaDeDestinos);
-console.log (listaDeDestinos[3]); 
-listaDeDestinos.push("Coronel Vivida");
-console.log(listaDeDestinos);
-listaDeDestinos.push("Curitiba");
-listaDeDestinos.push("Paris");
-listaDeDestinos.push("Barcelona");
-console.log(listaDeDestinos);
+if(idadeComprador >=18) {
+  console.log("Comprador maior de idade");
+  consolc.log("Destinos disponiveis:" + listaDeDestinos);
+} else {
+  console.log("Infelizmente voce é menor de idade")
+  console.log("Voce nao possui nenhum destino disponivel:");
+}
+
+
+
+
