@@ -1,63 +1,70 @@
-const prompt = require('prompt-sync')
-  const entrada = prompt('');
+const prompt = require('prompt-sync');
+const entrada = prompt();
 
-const nomeCompleto = "Gabriella Kaipper ";
+let idade = 18;
 const anoNascimento = 2006;
 let anoAtual = 2024;
-let idade = 18;
-const anoFormatura = 2029;
+const nomeCompleto = "Gabriella Kaipper Dos Santos";
 
-console.log("olá eu sou " +  nomeCompleto + " estamos no ano " + anoAtual + " minha idade é " + idade + " anos " + " e nasci no ano de " + anoNascimento);
+console.log("Meu nome é " + nomeCompleto + " nascido no ano de " + anoNascimento + " e no ano atual " + anoAtual + " completo " + idade + " anos");
 
-idade = idade + 1;
 anoAtual = anoAtual + 1;
-console.log("Eu vou fazer " + idade + " anos, ano que vem, em " + anoAtual + ". Quero estar cursando odontologia, e pretendo me formar em " + anoFormatura);
+idade = idade +1;
 
+console.log(anoAtual);
+console.log(idade);
 
-//Agência de viagens Hawaii Paris China Russia Cuba
+//agência de viagens Dubai, New York, Maldivas, Madagascar, Chile
+
 const listaDeDestinos = new Array(
-  "hawaii",
-  "russia",
-  "china",
-  "Paris",
-  "cuba"
-);
-var idadeComprador = entrada("Qual sua idade?");
-var nomeComprador = entrada("Qual seu nome?");  
-if(idadeComprador >= 18) {
-  console.log("Ola Senhor(a) " + nomeComprador)
-  console.log("Comprador maior de idade");
-  console.log("Escolha seu destino");
-  
-  var contador= 0;
-  
-  while(contador <9){
-  console.log(listaDeDestinos[contador]);  
-  contador++;
+  " Dubai",
+  " New York",
+  " Maldivas",
+  " Madagascar",
+  " Chile"
+ );
 
-
-  console.log("Destinos disṕniveis: " + listaDeDestinos)
-
-;
-}
 console.log(listaDeDestinos);
 console.log(listaDeDestinos[3]);
 listaDeDestinos.push("Coronel Vivida");
 console.log(listaDeDestinos);
-listaDeDestinos.push("Campo Mourão");
-console.log*(listaDeDestinos);
-listaDeDestinos.push("Ponta grossa");
-console.log(listaDeDestinos);
-listaDeDestinos.push("Cabo Frio");
+listaDeDestinos.push("Austrália");
+listaDeDestinos.push("Alemanha");
+listaDeDestinos.push("Amazonas");
 console.log(listaDeDestinos);
 
-if(idadeComprador <= 18)
-console.log("O senhor(a))não é maior de idade")
+const loginCerto = "gabi";
+const senhaCerta = 123;
+
+var login = entrada("Qual e o seu login ? ");
+var senha = entrada("Digite sua senha: ");
+
+while(login != loginCerto && senha != senhaCerta){
+  console.log ("login ou senha incorretos");
+  login = entrada("Qual é o seu login ? ");
+  senha = entrada("Digite sua senha: ");
   
 }
-var destino = entrada("Digite o numero que corresponde ao destino selecionado (0-8)" );
-console.log(`destino selecionado foi: 
-${listaDeDestinos[destino]}`);
+
+var nomeComprador = entrada("digite seu nome: ");
+var idadeComprador = entrada("Qual a sua idade ?");
+
+
+if(idadeComprador >=18) {
+  console.log("Olá senhor(a) "+ nomeComprador);
+  console.log("Comprador maior de idade");
+  console.log("Destinos disponíveis: " + listaDeDestinos);
+  console.log("escolha seu destinos");
+  var contador = 0;
+
+  while(contador <9){
+    console.log(listaDeDestinos[contador]);
+    contador ++;
+  }
+  var destino = entrada("Digite o número que corresponde ao destino selecionado (0-8)");
+  console.log(`destino selecionado foi: ${listaDeDestinos[destino]}`);
+} else {
+  console.log("Olá senhor(a)" + nomeComprador);
+  console.log("Infelizmente esta indisponivel passagem para menores de 18 anos");
+  console.log("Você e menor de idade");
 }
-
-
